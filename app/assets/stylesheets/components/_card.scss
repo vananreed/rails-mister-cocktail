@@ -1,0 +1,45 @@
+
+.cards-container {
+  margin: 5px;
+}
+
+.card {
+  margin: 5px;
+  height: 500px;
+  background-color: gray;
+  border-radius: 5px;
+  background-image: url('https://hips.hearstapps.com/del.h-cdn.co/assets/15/34/1439912764-vodka-drinks-strawberry.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.card:hover {
+  text-decoration: none;
+  color: black;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.4);
+  box-shadow: 0 2px 3px rgba(0,0,0,0.6);
+}
+
+.card .cocktail-name {
+  font-family: Luminari;
+  font-size: 30px;
+  position: absolute;
+  top: 20px;
+  left: 25px;
+}
+
+.card .cocktail-ingredients {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+
+.card ul {
+  list-style: none;
+}

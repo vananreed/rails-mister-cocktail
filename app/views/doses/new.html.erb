@@ -1,6 +1,12 @@
 <h2>Add Dose for <%= @cocktail.name %></h2>
 <%= simple_form_for [@cocktail, @dose] do |f|%>
   <%= f.input :description %>
-  <%= f.association :ingredient %>
-  <%= f.submit %>
+  <%= f.association :ingredient, collection: Ingredient.order('name ASC') %>
+  <%= select_tag "ingredient", options_from_collection_for_select(
+      Ingredient.order('name ASC'),
+      :name, :name),
+      class: 'select2' %>
+  <%= f.submit class: "btn btn-danger" %>
 <% end %>
+
+<%= link_to "Back to drinks", cocktails_path %>

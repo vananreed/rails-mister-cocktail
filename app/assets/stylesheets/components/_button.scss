@@ -1,0 +1,31 @@
+.button-banner {
+  font-family: Luminari;
+  color: white;
+  font-weight: bolder;
+  padding: 15px 25px;
+  border-radius: 25px;
+  border: 1px solid white;
+  transition: border 0.8s ease;
+  transition: color 0.8s ease;
+}
+
+.button {
+  font-family: Luminari;
+  font-weight: lighter;
+  padding: 15px 25px;
+
+
+}
+
+.button:hover {
+  text-decoration: none;
+  color: black;
+
+}
+
+.button-banner:hover {
+  color: #de0303;
+  text-decoration: none;
+  // border: 1px solid #de0303;
+  // background-color: #de0303;
+}
