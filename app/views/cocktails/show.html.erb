@@ -28,5 +28,12 @@
     </div>
   </div>
 </div>
-
+<div class="reviews">
+  <h2>Reviews</h2>
+  <% @cocktail.reviews.each do |review| %>
+    <div class="fake-name"><i class="fas fa-user-circle"></i> <%= Faker::FunnyName.name %></div>
+    <p class="review"><%= review.content %></p>
+  <% end %>
+</div>
+<%= link_to "Add Review",  new_cocktail_review_path(@cocktail), class: "button" %>
 <%= link_to "Back to drinks", cocktails_path, class: "button" %>

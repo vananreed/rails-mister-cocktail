@@ -1,0 +1,5 @@
+<h2>Add Anonymous Review for <%= @cocktail.name %></h2>
+<%= simple_form_for [@cocktail, @review] do |f|%>
+  <%= f.input :content %>
+  <%= f.submit class: "btn btn-danger" %>
+<% end %>
