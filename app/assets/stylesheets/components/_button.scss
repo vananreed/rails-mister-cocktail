@@ -7,25 +7,28 @@
   border: 1px solid white;
   transition: border 0.8s ease;
   transition: color 0.8s ease;
+  margin: 10px;
+}
+
+.button-banner:hover {
+  color: #f36816;
+  text-decoration: none;
+  // border: 1px solid #de0303;
+  // background-color: #de0303;
 }
 
 .button {
   font-family: Luminari;
   font-weight: lighter;
-  padding: 15px 25px;
-
-
+  padding: 15px 20px;
+  margin: 10px;
+  border: 1px solid #f36816;
+  border-radius: 20px;
+  transition: color 0.3s ease;
 }
 
 .button:hover {
   text-decoration: none;
-  color: black;
-
-}
-
-.button-banner:hover {
-  color: #de0303;
-  text-decoration: none;
-  // border: 1px solid #de0303;
-  // background-color: #de0303;
+  color: #f36816;
+  margin: 10px;
 }

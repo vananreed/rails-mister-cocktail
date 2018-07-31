@@ -1,13 +1,21 @@
 .reviews {
   margin-left: 30px;
+  margin-right: 30px;
   display: flex;
   flex-direction: column;
+  margin-bottom: 20px;
 }
 
 .reviews h2 {
   font-family: Luminari;
+
 }
 
 .review {
-  font-family: Georgia
+  font-family: Georgia;
+  height: 100px;
+  padding: 20px;
+  background-color: #E6E6E6;
+  margin-bottom: 10px;
+  border-radius: 5px;
 }
