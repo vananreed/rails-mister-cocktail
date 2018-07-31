@@ -1,0 +1,15 @@
+.banner {
+  height: 40vh;
+  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://s-i.huffpost.com/gen/2010928/images/o-COCKTAIL-RECIPES-facebook.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center
+}
+
+.banner h1 {
+  font-family: Luminari;
+  color: white;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.4);
+}

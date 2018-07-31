@@ -1,9 +1,32 @@
+
 <div class="cocktail-name"><%= @cocktail.name %></div>
-<div class="details">
-  <p>Ingredients</p>
-  <div class="cocktail-ingredients">
-    <%= @cocktail.ingredients %>
+
+
+<div class="cocktail-info">
+  <div class="cocktail-picture">
+    <%= cl_image_tag @cocktail.photo %>
+  </div>
+
+  <div class="details">
+    <p>Ingredients</p>
+    <div class="cocktail-ingredients">
+      <ul>
+        <% @cocktail.ingredients.each do |ingredient| %>
+          <li>
+            <%= ingredient.name %>
+            <ul>
+              <li>
+                <% ingredient.doses.each do |dose| %>
+                <%=  dose.description %>
+                <% end %>
+              </li>
+            </ul>
+          </li>
+        <% end %>
+      </ul>
+      <%= link_to "Add Ingredient", new_cocktail_dose_path(@cocktail), class: "button"%>
+    </div>
   </div>
 </div>
-<%= link_to "Add Ingredient", new_cocktail_dose_path(@cocktail) %>
-<%= link_to "Back to drinks", cocktails_path %>
+
+<%= link_to "Back to drinks", cocktails_path, class: "button" %>

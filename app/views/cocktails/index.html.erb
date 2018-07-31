@@ -10,13 +10,6 @@
           <div class="card" style="background-image:
          url('<%= cl_image_path cocktail.photo, height: 300, width: 400 %>')">
             <div class="cocktail-name"><%= cocktail.name %></div>
-            <div class="cocktail-ingredients">
-              <ul>
-                <% cocktail.ingredients.each do |ingredient| %>
-                  <li><%= ingredient.name %></li>
-                <% end %>
-              </ul>
-            </div>
           </div>
         <% end %>
       </div>

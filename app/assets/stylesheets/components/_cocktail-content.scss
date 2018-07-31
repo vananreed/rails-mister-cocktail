@@ -1,0 +1,17 @@
+.cocktail-info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 100px;
+}
+
+.cocktail-picture img {
+  height: 70vh;
+  width: auto;
+}
+
+.cocktail-name {
+  font-family: Luminari;
+  text-align: center;
+  font-size: 50px;
+}
